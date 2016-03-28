@@ -22,4 +22,4 @@ interface可多重继承。
 public interface MyInterface extends ThisInterface, ThatInterface {
     
 }
-```java
+```
