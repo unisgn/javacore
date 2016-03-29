@@ -2,13 +2,12 @@
 # interface
 
 
-
 ```java
 
     public interface MyInterface {
         int AGE = 12;
         int getMethod();
-        voit setMethod();
+        void setMethod();
     }
 
     class MyInterfaceImpl implements MyInterface {
@@ -34,12 +33,14 @@
 interface里面的方法默认为public，可在定义时省略。
 
 
-interface可以有常量域，默认为static final
+## constant field
 
-interface可多重继承。
+static final
+
+## multi-inheritance
 
 ```java
 
-public interface MyInterface extends ThisInterface, ThatInterface {}
+    public interface MyInterface extends ThisInterface, ThatInterface {}
 
 ```

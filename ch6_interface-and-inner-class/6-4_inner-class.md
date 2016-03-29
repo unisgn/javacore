@@ -1,15 +1,39 @@
 
 
+```java
+    
+    class OuterClass {
+        private boolean msg = "abc";
 
-# anonymous inner class
+
+
+        class InnerClass {
+
+            void greeting() {
+                System.out.print(msg);
+            }
+        }
+    }
+
+```
+
+inner class has knowledge about the outer class in the specified scope;
+
+
+## anonymous inner class
 
 ```java
 
-Thread t = new Thread(new Runnerable() {
-   public void run() {
-        // do something;
-   } 
-});
+    class Demo {
+
+        public static void main(String[] args){
+              Thread t = new Thread(new Runnable() {
+                 public void run() {
+                      // do something;
+                 }
+              });
+        }
+    }
 
 ```
 
